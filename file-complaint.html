@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeaceConnect - File a Complaint</title>
+    <link rel="stylesheet" href="file-complaint.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="know-rights.html">Know Your Rights</a></li>
+                <li><a href="file-complaint.html" class="active">File Complaint</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Complaint Form Section -->
+    <main>
+        <section class="rights">
+            <div class="form-container">
+                <h2>File a Complaint</h2>
+                <p>Please provide accurate information to help us process your complaint effectively.</p>
+                
+                <form id="complaintForm">
+                    <!-- Full Name -->
+<label for="fullName">Full Name:</label>
+<input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+<!-- Email Address -->
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+<!-- Aadhar Number (For Identification) -->
+<label for="aadharNumber">Aadhar Number:</label>
+<input type="text" id="aadharNumber" name="aadharNumber" placeholder="Enter your 12-digit Aadhar number" pattern="\d{12}" title="Please enter a valid 12-digit Aadhar number" required>
+
+<!-- Phone Number -->
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+
+<!-- Complaint Category -->
+<label for="category">Complaint Category:</label>
+<select id="category" name="category" required>
+    <option value="" disabled selected>Select the category</option>
+    <option value="discrimination">Discrimination</option>
+    <option value="harassment">Harassment</option>
+    <option value="fraud">Fraud</option>
+    <option value="misconduct">Misconduct</option>
+    <option value="others">Others</option>
+</select>
+
+<!-- Complaint Description -->
+<label for="description">Complaint Description:</label>
+<textarea id="description" name="description" placeholder="Provide detailed information about your complaint" rows="6" required></textarea>
+
+<!-- File Upload for Evidence (Optional) -->
+<label for="evidence">Upload Evidence (Optional):</label>
+<input type="file" id="evidence" name="evidence" accept="image/*,application/pdf">
+
+<!-- Submit Button -->
+<button type="submit" class="submit-btn">Submit Complaint</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 PeaceConnect. All Rights Reserved.</p>
+    </footer>
+    
+
+</body>
+</html>

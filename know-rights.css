@@ -1,0 +1,70 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Add Background Image */
+body {
+    background: url('bgg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* Adjust text color for visibility */
+}
+
+header, main, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+section.rights {
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: Adds transparency for better text readability */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+section.rights h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.right {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+/* Footer Styling */
+footer p {
+    color: #fff;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+

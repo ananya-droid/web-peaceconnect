@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact PeaceConnect for support and conflict resolution strategies.">
+    <title>PeaceConnect - Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">PeaceConnect</div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="know-rights.html">Know Your Rights</a></li>
+            <li><a href="file-complaint.html">File Complaint</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="form-container">
+            <h1>Contact Us</h1>
+            <p>If you need support, please fill in the form below and schedule a meeting with us.</p>
+
+            <form id="contactForm">
+                <div class="input-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="meeting-time">Schedule Your Meeting</label>
+                    <select id="meeting-time" name="meeting-time" required>
+                        <option value="">Select a time</option>
+                        <option value="10 minutes">10 minutes from now</option>
+                        <option value="30 minutes">30 minutes from now</option>
+                        <option value="60 minutes">60 minutes from now</option>
+                        <option value="90 minutes">90 minutes from now</option>
+                        <option value="120 minutes">120 minutes from now</option>
+                        <option value="180 minutes">180 minutes from now</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Details of Your Situation</label>
+                    <textarea id="message" name="message" placeholder="Briefly describe your situation..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Request Meeting</button>
+            </form>
+
+            <p id="success-message" class="hidden">Your request has been submitted successfully!</p>
+        </div>
+    </section>
+
+    <!-- JavaScript for Form Validation -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            
+            const phone = document.getElementById('phone').value.trim();
+            const phonePattern = /^[0-9]{10}$/;
+
+            if (!phone.match(phonePattern)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return;
+            }
+
+            document.getElementById('success-message').classList.remove('hidden');
+            setTimeout(() => document.getElementById('success-message').classList.add('hidden'), 3000);
+            this.reset();
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Now - Interactive Quiz & Learning Modules</title>
+    <link rel="stylesheet" href="learn-now.css">
+    <script defer src="learn-now.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Learn Now 📚</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home 🏠</a></li>
+                <li><a href="know-rights.html">Your Rights ⚖️</a></li>
+                <li><a href="resources.html">Resources 🔗</a></li>
+                <li><a href="learn-now.html" class="active">Learn Now 📘</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Quiz Section (Highlighted and Modern) -->
+        <section class="quiz-section">
+            <div class="quiz-container">
+                <h2>Test Your Knowledge: Real-life Legal Rights Quiz 📝</h2>
+                <p>Empower yourself by understanding your legal rights in everyday scenarios. Ready to challenge your knowledge?</p>
+                <button id="start-quiz-btn">Start Quiz 🚀</button>
+                <div id="quiz-content" class="hidden">
+                    <p id="quiz-question"></p>
+                    <div id="quiz-options"></div>
+                    <button id="next-btn" class="hidden" onclick="nextQuestion()">Next ➡️</button>
+                </div>
+                <div id="quiz-result" class="hidden">
+                    <h2>Quiz Completed! 🏆</h2>
+                    <p id="score-text"></p>
+                    <div class="progress-bar">
+                        <div id="progress-fill"></div>
+                    </div>
+                    <p id="encouraging-message"></p>
+                </div>
+            </div>
+        </section>
+        <!-- Learning Modules Section -->
+        <section class="modules">
+            <h2>Interactive Learning Modules</h2>
+            <div class="module" onclick="toggleModule(this)">
+                <h3>Understanding Fundamental Rights 🏛️</h3>
+                <p class="module-details">
+                Explore the evolution of fundamental rights in India, including landmark judgments that have shaped these protections. Learn how these rights safeguard you in daily life—from combating workplace discrimination to ensuring personal freedoms. This module features real-life case studies, actionable steps to assert your rights, and guidance on seeking help when your rights are at risk.
+                </p>
+            </div>
+            <div class="module" onclick="toggleModule(this)">
+                <h3>Accessing Legal Aid and Support 🤝</h3>
+                <p class="module-details">
+                This module guides you through various avenues for accessing legal aid. Discover government schemes, community legal services, and NGO support systems. It includes practical stories of individuals who navigated legal challenges successfully, along with step-by-step instructions on filing complaints, contacting legal aid offices, and understanding your entitlements during crises.
+                </p>
+            </div>
+            <div class="module" onclick="toggleModule(this)">
+                <h3>Employment Rights and Workplace Safety 🛡️</h3>
+                <p class="module-details">
+                Gain essential insights into your workplace rights and safety. Learn about anti-discrimination laws, safe working conditions, and protocols for reporting violations. This module offers practical advice, checklists for documenting incidents, and tips on consulting legal experts to ensure your rights are upheld in real-world scenarios.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 PeaceConnect</p>
+    </footer>
+</body>
+</html>

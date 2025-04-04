@@ -1,0 +1,212 @@
+/* learn-now.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Background Image */
+body {
+    background: url('bgg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+header {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Adds semi-transparent black background */
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #f39c12; /* Gold hover and active color */
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Quiz Section Styles */
+.quiz-section {
+    margin-bottom: 40px;
+}
+
+.quiz-container {
+    background: #0807072a;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.quiz-container h2 {
+    margin-top: 0;
+    color: #3838384d;
+}
+
+#start-quiz-btn {
+    background: #ffcb3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 20px 0;
+}
+
+#start-quiz-btn:hover {
+    background: #ffd105;
+}
+
+#quiz-content {
+    margin-top: 20px;
+}
+
+#quiz-question {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#quiz-options button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    background: #004466;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#quiz-options button:hover {
+    background: #006699;
+}
+
+#next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #f8d407;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#next-btn:hover {
+    background: #fbff0a;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Quiz Result Section Styles */
+#quiz-result {
+    margin-top: 20px;
+}
+
+#quiz-result h2 {
+    color: #004466;
+}
+
+#score-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 25px;
+    background: #ddd;
+    border-radius: 10px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+#progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #28a745;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+#encouraging-message {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+/* Modules Section Styles */
+.modules {
+    margin-bottom: 40px;
+}
+
+.modules h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #eef;
+}
+
+.module {
+    background: #1f010148;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.module:hover {
+    background: #eef;
+}
+
+.module .module-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #004466;
+    color: white;
+}

@@ -1,0 +1,115 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Background Image */
+body {
+    background: url('bgg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Navbar Styling */
+header {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Adds semi-transparent black background */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #f39c12; /* Gold hover and active color */
+}
+
+/* Complaint Form Section */
+section.rights {
+    background-color: rgba(0, 0, 0, 0.225); /* Adds transparency for readability */
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* Form Styling */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+footer p {
+    opacity: 0.8;
+    font-size: 1rem;
+}
